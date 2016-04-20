@@ -2,7 +2,7 @@
     <?php get_header(); ?>
 
 
-        <div class="wrapper-home">
+        <div class="wrapper-vat">
 
 
  
