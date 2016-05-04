@@ -11,7 +11,7 @@
 <div class="container-fluid">
 
 
-                <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -19,6 +19,8 @@
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
                     <!-- Carousel items -->
+
+
                     <div class="carousel-inner">
                         <div class="active item carousel-fade">
                             <h2>Slide 1</h2>
@@ -42,6 +44,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <!-- Carousel nav -->
                     <a class="carousel-control left" href="#myCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
