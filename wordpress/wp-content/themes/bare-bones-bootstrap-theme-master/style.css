@@ -12,3 +12,30 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 The Bootstrap CSS (and JS) can be found in the separate css, fonts, and js folders.
 Do not modify the content in those folders.
 */
+
+
+.item{
+    background: white;
+    text-align: center;
+    height: 500px !important;
+    width: 100% !important;
+}
+
+.carousel{
+    margin-top: 20px;
+/*    height: 50%;*/
+}
+
+.bs-example{
+	margin: 20px;
+}
+
+.carousel.carousel-fade .item {
+  opacity:0;
+  filter: alpha(opacity=0); /* ie fix */
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+    filter: alpha(opacity=100); /* ie fix */
+}
