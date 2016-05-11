@@ -95,12 +95,11 @@
 
 
 
-                <div class="col-md-12">
 
 
 
-                        <div class="col-md-3 text-center">
-                            <div class="thumbnail">
+
+
 
 
 
@@ -113,6 +112,8 @@
 
                                 <!-- the loop -->
                                 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                                   <div class="col-md-3 text-center">
+                                    <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
                                     <?php if ( has_post_thumbnail() ) : ?>
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -120,7 +121,11 @@
                                         </a>
                                         <?php endif; ?>
                                         <h2><?php the_title(); ?></h2>
-                                       <h5> <?php echo get_cat_name(3);?></h5>
+                                       <h5> <?php echo get_the_term_list( $post->ID, 'students'); ?>
+<!--                                       <?php echo get_cat_name(3);?>-->
+                                       </h5>
+ </div>
+                        </div>
 
                                             <?php endwhile; ?>
                                                 <!-- end of the loop -->
@@ -137,8 +142,7 @@
                                                         <?php endif; ?>
 
 
-                            </div>
-                        </div>
+
 
 
 
@@ -148,7 +152,7 @@
                     <!-- end of students list-->
 
 
-                </div>
+
 
             </div>
             <!-- end of Team Members -->
