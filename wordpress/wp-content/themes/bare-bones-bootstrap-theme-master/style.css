@@ -39,3 +39,30 @@ Do not modify the content in those folders.
     opacity:1;
     filter: alpha(opacity=100); /* ie fix */
 }
+
+
+
+
+
+
+
+
+/*------------------Starting of FOOTER---------------*/
+
+footer {
+    background-color: #2e2e2e;
+    /* overwrite default margin, so there won't be two white bars above and below footer */
+    margin: 0;
+    /* more breathing room for the footer */
+    padding: 5% 0;
+}
+
+footer h6 {
+    font-family: "helvetica neue";
+    /* thinner font weight to match the delicate visual style and subtle background color */
+    font-weight: 300;
+    color: dimgray;
+}
+
+
+/*--------------------Ending of FOOTER------------------*/
