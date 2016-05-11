@@ -71,7 +71,7 @@ function bare_bones_bootstrap_enqueue_scripts() {
 	wp_enqueue_script( 'jquery' );
 	// Bootstrap
 	wp_enqueue_script( 'bootstrap-script', $template_url . '/js/bootstrap.min.js', array( 'jquery' ), null, true );
-	wp_enqueue_style( 'bootstrap-style', $template_url . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap-style', $template_url . '/css/bootswatch.min.css' );
 	//Main Style
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
 	// Load Thread comments WordPress script.

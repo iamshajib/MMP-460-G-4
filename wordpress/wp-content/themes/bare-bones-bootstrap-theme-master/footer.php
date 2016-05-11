@@ -15,7 +15,7 @@
 
             </div>
         </div>
-                <h6>© 2015 Mohammed Shajib</h6>
+                <h6>© Group 4</h6>
         </footer>
 
     <?php wp_footer(); // js scripts are inserted using this function ?>
