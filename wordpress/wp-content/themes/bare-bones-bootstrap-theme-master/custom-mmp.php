@@ -1,4 +1,4 @@
-<?php /* Template Name: Custom Vat Page Template */ ?>
+<?php /* Template Name: Custom Mmp Page Template */ ?>
     <?php get_header(); ?>
 
 
@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                    Welcome to Video Arts & Technology
+                    Welcome to Multimedia Programming
                 </h1>
                 </div>
 
@@ -99,7 +99,7 @@
 
 
                 <?php
-                                $the_query = new WP_Query( array( 'cat' => 8, 'posts_per_page' => 5) ); ?>
+                                $the_query = new WP_Query( array( 'cat' => 16, 'posts_per_page' => 5) ); ?>
 
                     <?php if ( $the_query->have_posts() ) : ?>
 
