@@ -1,112 +1,63 @@
-#first{
-    background-color: aqua;
-    width: 40%;
-}
-
-#second{
-    background-color: bisque;
-    width: 40%;
-}
-
-#third{
-background-color: yellowgreen;
-}
-
-#carousel {
-position: relative;
-/*width:60%;*/
-margin:0 auto;
-}
-
-#slides {
-overflow: hidden;
-position: relative;
 /*width: 100%;*/
-height: 250px;
+
+#h-vat {
+    background-color: #ff7473;
+    height: 500px;
 }
 
-#slides ul {
-list-style: none;
-/*width:100%;*/
-height:250px;
-margin: 0;
-padding: 0;
-position: relative;
+#h-mmd {
+    background-color: #ffc952;
+    height: 500px;
 }
 
- #slides li {
-width:100%;
-height:250px;
-float:left;
-text-align: center;
-position: relative;
-font-family:lato, sans-serif;
-}
-/* Styling for prev and next buttons */
-.btn-bar{
-/*width:60%;*/
-margin:0 auto;
-display:block;
-position:relative;
-top:40px;
+#h-ani {
+    background-color: #47b8e0;
+    height: 500px;
 }
 
- #buttons {
-padding:0 0 5px 0;
-float:right;
+.allslider img {
+    width: 100%;
+    height: 50%;
 }
 
-#buttons a {
-text-align:center;
-display:block;
-font-size:50px;
-float:left;
-outline:0;
-margin:0 60px;
-color:#b14943;
-text-decoration:none;
-display:block;
-padding:9px;
-/*width:35px;*/
+.allslider #twocolumngallery {
+    margin-top: 2em;
+    margin-bottom: 10em;
 }
 
-a#prev:hover, a#next:hover {
-color:#FFF;
-text-shadow:.5px 0px #b14943;  
+.allslider #twocolumngallery>div>div {
+    padding: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.quote-phrase, .quote-author {
-font-family:sans-serif;
-font-weight:300;
-display: table-cell;
-vertical-align: middle;
-padding: 5px 20px;
-font-family:'Lato', Calibri, Arial, sans-serif;
+.allslider .bg-ivory {
+    background-color: rgb(238, 238, 238);
+    position: relative;
 }
 
-.quote-phrase {
-height: 200px;
-font-size:24px;
-color:#FFF;
-font-style:italic;
-text-shadow:.5px 0px #b14943;  
+.allslider #twocolumngallery img:hover {
+    opacity: 0.3;
+    -webkit-filter: blur(3px);
+    /* Prefixed CSS3 blur filters */
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    /* Safari */
 }
 
-.quote-marks {
-font-size:30px;
-padding:0 3px 3px;
-position:inherit;
+.allslider #twocolumngallery img {
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    /* Safari */
 }
 
-.quote-author {
-font-style:normal;
-font-size:20px;
-color:#b14943;
-font-weight:400;
-height: 30px;
-}
-
-.quoteContainer, .authorContainer {
-display: table;
-/*width: 100%;*/
+.allslider .hide-title > h5 {
+    color: black;
+    opacity: 0;
+    position: absolute;
+    left: 38%;
+    top: 45%;
 }

@@ -137,17 +137,7 @@
                                         <?php endif; ?>
 
 
-
-
-
-
-
-
-
                                             <!-- end of students list-->
-
-
-
 
             </div>
             <!-- end of Team Members -->
