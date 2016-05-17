@@ -14,33 +14,55 @@ The Bootstrap CSS (and JS) can be found in the separate css, fonts, and js folde
 Do not modify the content in those folders.
 */
 
-.item {
-    background: white;
-    text-align: center;
-    height: 500px !important;
-    width: 100% !important;
+.allslider img {
+    width: 100%;
+    height: 50%;
 }
 
-.carousel {
-    /*    margin-top: 20px;*/
-    /*    height: 50%;*/
+.allslider #twocolumngallery {
+    margin-top: 2em;
+    margin-bottom: 10em;
 }
 
-.bs-example {
-    margin: 20px;
+.allslider #twocolumngallery>div>div {
+    padding: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.carousel.carousel-fade .item {
+.allslider .bg-ivory {
+    background-color: rgb(238, 238, 238);
+    position: relative;
+}
+
+.allslider #twocolumngallery img:hover {
+    opacity: 0.3;
+    -webkit-filter: blur(3px);
+    /* Prefixed CSS3 blur filters */
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    /* Safari */
+}
+
+.allslider #twocolumngallery img {
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    /* Safari */
+}
+
+.allslider .hide-title > h5 {
+    color: black;
     opacity: 0;
-    filter: alpha(opacity=0);
-    /* ie fix */
+    position: absolute;
+    left: 38%;
+    top: 45%;
 }
 
-.carousel.carousel-fade .active.item {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    /* ie fix */
-}
+
+/*-------------------slider------------------*/
 
 .fm1 {
     background-color: #ff6700;
@@ -53,6 +75,7 @@ Do not modify the content in those folders.
 .fm3 {
     background-color: #ee1882;
 }
+
 
 /*------------------Starting of FOOTER---------------*/
 

@@ -8,81 +8,84 @@
 
 
 
-<div class="container-fluid">
+        <div class="container-fluid allslider">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1">
 
 
-                <div id="myCarousel" class="carousel slide">
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Carousel items -->
 
+                    <div class="bg-ivory hide-title" id="tribeca-loft">
+                        <h5 class="text-left">TriBeCa Loft, 2007</h5>
 
-                    <div class="carousel-inner">
-                        <div class="active item carousel-fade">
-                            <h2>Slide 1</h2>
-                            <div class="carousel-caption">
-                                <h3>First slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                        <div class="item carousel-fade">
-                            <h2>Slide 2</h2>
-                            <div class="carousel-caption">
-                                <h3>Second slide label</h3>
-                                <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                            </div>
-                        </div>
-                        <div class="item carousel-fade">
-                            <h2>Slide 3</h2>
-                            <div class="carousel-caption">
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <div class="slider">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg"></div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- Carousel nav -->
-                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+
                 </div>
- </div>
+
+
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
 
 
 
-<div class="container" id="vat">
+        <div class="container" id="vat">
 
 
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
                     Welcome to Video Arts & Technology
                 </h1>
-            </div>
+                </div>
 
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>About</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>About</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <a href="#" class="btn btn-default">Learn More</a>
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
-
-
-
-        </div>
 
 
 
@@ -95,45 +98,43 @@
 
 
 
-                               <?php
+                <?php
                                 $the_query = new WP_Query( array( 'cat' => 8 ) ); ?>
 
-                            <?php if ( $the_query->have_posts() ) : ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
 
-                                <!-- pagination here -->
+                        <!-- pagination here -->
 
-                                <!-- the loop -->
-                                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                                   <div class="col-md-3 text-center">
-                                    <div class="thumbnail">
+                        <!-- the loop -->
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <div class="col-md-3 text-center">
+                                <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
                                     <?php if ( has_post_thumbnail() ) : ?>
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php  the_post_thumbnail( 'post-medium', array( 'class' => 'img-responsive' ) );?>
                                         </a>
                                         <?php endif; ?>
-                                        <h2><?php the_title(); ?></h2>
-                                       <h5> <?php echo get_the_term_list( $post->ID, 'students'); ?>
+                                            <h2><?php the_title(); ?></h2>
+                                            <h5> <?php echo get_the_term_list( $post->ID, 'students'); ?>
 <!--                                       <?php echo get_cat_name(3);?>-->
                                        </h5>
- </div>
-                        </div>
+                                </div>
+                            </div>
 
-                                            <?php endwhile; ?>
-                                                <!-- end of the loop -->
+                            <?php endwhile; ?>
+                                <!-- end of the loop -->
 
-                                                <!-- pagination here -->
+                                <!-- pagination here -->
 
-                                                <?php wp_reset_postdata(); ?>
-
-
-                                                    <?php else : ?>
-                                                        <p>
-                                                            <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-                                                        </p>
-                                                        <?php endif; ?>
+                                <?php wp_reset_postdata(); ?>
 
 
+                                    <?php else : ?>
+                                        <p>
+                                            <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                                        </p>
+                                        <?php endif; ?>
 
 
 
@@ -141,7 +142,9 @@
 
 
 
-                    <!-- end of students list-->
+
+
+                                            <!-- end of students list-->
 
 
 
@@ -197,3 +200,15 @@
 
 
         <?php get_footer(); ?>
+
+
+            <script>
+                $(document).ready(function () {
+                    $('#tribeca-loft img').mouseenter(function () {
+                        $('#tribeca-loft h5').css("opacity", "1");
+                    });
+                    $('#tribeca-loft img').mouseleave(function () {
+                        $('#tribeca-loft h5').css("opacity", "0");
+                    });
+                });
+            </script>
