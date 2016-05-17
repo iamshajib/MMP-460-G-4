@@ -95,14 +95,6 @@
 
 
 
-
-
-
-
-
-
-
-
                                <?php
                                 $the_query = new WP_Query( array( 'cat' => 8 ) ); ?>
 
