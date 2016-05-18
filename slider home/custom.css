@@ -54,7 +54,7 @@
     position: relative;
 }
 
-#work #twocolumngallery img:hover {
+#work .tile:hover {
     opacity: 0.3;
     -webkit-filter: blur(3px);
     /* Prefixed CSS3 blur filters */
@@ -65,7 +65,7 @@
     /* Safari */
 }
 
-#work #twocolumngallery img {
+#work .tile {
     transition: 0.5s;
     transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
@@ -82,15 +82,20 @@
 
 #slider-test {
     margin-top: 5%;
+    height: 100%;
 }
 
 #slider-test img {
-    align: middle;
+    margin-left: 30%
 }
 
 #h-vat {
     background-color: #ff7473;
     height: 500px;
+}
+
+#h-vat .carousel-inner {
+    background-color: purple;
 }
 
 #h-mmd {

@@ -99,7 +99,7 @@
 
 
                 <?php
-                                $the_query = new WP_Query( array( 'cat' => 8, 'posts_per_page' => 5) ); ?>
+                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8) ); ?>
 
                     <?php if ( $the_query->have_posts() ) : ?>
 
@@ -126,18 +126,25 @@
                                 <!-- end of the loop -->
 
                                 <!-- pagination here -->
+                                <p>posts pagination</p>
+                                <?php
 
-                                <?php wp_reset_postdata(); ?>
+the_posts_pagination( array( 'mid_size'  => 2 ) );
+
+//                                    the_posts_pagination( array( // 'mid_size' => 2, // 'prev_text' => __( 'Back', 'textdomain' ), // 'next_text' => __( 'Onward', 'textdomain' ), // ) );
+                                ?>
+
+                                    <?php wp_reset_postdata(); ?>
 
 
-                                    <?php else : ?>
-                                        <p>
-                                            <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-                                        </p>
-                                        <?php endif; ?>
+                                        <?php else : ?>
+                                            <p>
+                                                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                                            </p>
+                                            <?php endif; ?>
 
 
-                                            <!-- end of students list-->
+                                                <!-- end of students list-->
 
             </div>
             <!-- end of Team Members -->
