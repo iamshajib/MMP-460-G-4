@@ -19,46 +19,9 @@ Do not modify the content in those folders.
     height: 50%;
 }
 
-.allslider #twocolumngallery {
+.allslider #twocolumngallery{
     margin-top: 2em;
     margin-bottom: 10em;
-}
-
-.allslider #twocolumngallery>div>div {
-    padding: 1.5em;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.allslider .bg-ivory {
-    background-color: rgb(238, 238, 238);
-    position: relative;
-}
-
-.allslider #twocolumngallery img:hover {
-    opacity: 0.3;
-    -webkit-filter: blur(3px);
-    /* Prefixed CSS3 blur filters */
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-    /* Safari */
-}
-
-.allslider #twocolumngallery img {
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    /* Safari */
-}
-
-.allslider .hide-title > h5 {
-    color: black;
-    opacity: 0;
-    position: absolute;
-    left: 38%;
-    top: 45%;
 }
 
 

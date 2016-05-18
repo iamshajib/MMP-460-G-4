@@ -17,7 +17,7 @@
 
 
                     <div class="bg-ivory hide-title" id="tribeca-loft">
-                        <h5 class="text-left">TriBeCa Loft, 2007</h5>
+
 
                         <div class="slider">
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
