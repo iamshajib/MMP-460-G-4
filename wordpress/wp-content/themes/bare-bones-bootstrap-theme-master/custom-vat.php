@@ -99,14 +99,14 @@
 
 
                 <?php
-                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8) ); ?>
+                                $wp_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 4) ); ?>
 
-                    <?php if ( $the_query->have_posts() ) : ?>
+                    <?php if ( $wp_query->have_posts() ) : ?>
 
                         <!-- pagination here -->
 
                         <!-- the loop -->
-                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
                             <div class="col-md-3 text-center">
                                 <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->

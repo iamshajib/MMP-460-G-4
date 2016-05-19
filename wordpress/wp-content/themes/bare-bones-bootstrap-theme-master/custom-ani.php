@@ -17,7 +17,6 @@
 
 
                     <div class="bg-ivory hide-title" id="tribeca-loft">
-                        <h5 class="text-left">TriBeCa Loft, 2007</h5>
 
                         <div class="slider">
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -67,7 +66,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                    Welcome to Animation
+                    Welcome to Animation and Motion Graphics
                 </h1>
                 </div>
 

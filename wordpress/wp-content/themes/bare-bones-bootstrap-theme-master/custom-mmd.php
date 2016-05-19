@@ -1,4 +1,4 @@
-<?php /* Template Name: Custom Mmp Page Template */ ?>
+<?php /* Template Name: Custom Mmd Page Template */ ?>
     <?php get_header(); ?>
 
 
@@ -17,7 +17,6 @@
 
 
                     <div class="bg-ivory hide-title" id="tribeca-loft">
-                        <h5 class="text-left">TriBeCa Loft, 2007</h5>
 
                         <div class="slider">
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -67,7 +66,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                    Welcome to Multimedia Programming
+                    Welcome to Multimedia Programming and Design
                 </h1>
                 </div>
 
@@ -99,7 +98,7 @@
 
 
                 <?php
-                                $the_query = new WP_Query( array( 'cat' => 16, 'posts_per_page' => 5) ); ?>
+                                $the_query = new WP_Query( array( 'cat' => 17, 'posts_per_page' => 5) ); ?>
 
                     <?php if ( $the_query->have_posts() ) : ?>
 
