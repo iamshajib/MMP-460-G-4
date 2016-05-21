@@ -8,19 +8,13 @@
 
 
 
-        <div class="container-fluid allslider">
-
-            <div class="row">
-
-                <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1">
+        <div class="container-fluid homeSlider text-center">
 
 
 
-                    <div class="bg-ivory hide-title" id="tribeca-loft">
 
 
-                        <div class="slider">
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                           <div id="myCarousel" class="carousel slide vert-offset-top-1 vert-offset-bottom-2" data-ride="carousel">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,8 +26,11 @@
 
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg"></div>
+                                    <div class="item active" style="background-color: red;" id="vatS1">
+                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>
+<!--                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">-->
+
+</div>
 
                                     <div class="item">
                                         <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
@@ -46,16 +43,8 @@
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
 
-
-                </div>
-
-
-            </div>
-            <!-- end of row -->
         </div>
         <!-- end of container -->
 
