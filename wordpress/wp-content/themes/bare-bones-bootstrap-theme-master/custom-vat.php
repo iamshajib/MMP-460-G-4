@@ -10,35 +10,35 @@
 
         <div class="container-fluid text-center" id="homeSlider">
 
-                           <div id="myCarousel" class="carousel slide vert-offset-top-1 vert-offset-bottom-2" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                                </ol>
+            <div id="myCarousel" class="carousel slide vert-offset-top-1 vert-offset-bottom-2" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
 
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-<!--                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>-->
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <!--                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>-->
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">
 
-</div>
+                    </div>
 
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
 
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
 
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
 
-                                </div>
-                            </div>
+                </div>
+            </div>
 
 
         </div>
@@ -85,14 +85,14 @@
 
                 <?php
                                 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                                $wp_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8) ); ?>
+                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 4, 'paged' => $paged ) ); ?>
 
-                    <?php if ( $wp_query->have_posts() ) : ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
 
                         <!-- pagination here -->
 
                         <!-- the loop -->
-                        <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                             <div class="col-md-3 text-center">
                                 <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
@@ -112,12 +112,20 @@
                                 <!-- end of the loop -->
 
                                 <!-- pagination here -->
-                                <p>posts pagination</p>
+
                                 <?php
-
-the_posts_pagination( array( 'mid_size'  => 2 ) );
-
-//                                    the_posts_pagination( array( // 'mid_size' => 2, // 'prev_text' => __( 'Back', 'textdomain' ), // 'next_text' => __( 'Onward', 'textdomain' ), // ) );
+                                    $args = [
+                                      'query' => $the_query,
+                                      'output_wrap' => 'ul',
+                                      'output_class' => 'pagination',
+                                      'current_wrap' => 'li',
+                                      'current_class' => 'active',
+                                      'page_wrap' => 'li',
+                                      'page_class' => '',
+                                      'link_class' => '',
+                                      'show_page_count' => false
+                                    ];
+                                    echo get_paginated_numbers( $args )
                                 ?>
 
                                     <?php wp_reset_postdata(); ?>
