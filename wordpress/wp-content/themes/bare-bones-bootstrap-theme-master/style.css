@@ -14,14 +14,14 @@ The Bootstrap CSS (and JS) can be found in the separate css, fonts, and js folde
 Do not modify the content in those folders.
 */
 
-.homeSlider img {
-    width: 100%;
-    height: 50%;
+#homeSlider img{
+/*    width: 100%;*/
+    height: 30%;
 
 }
-#vatS1 {
-    height: 100vh;
-
+.allslider img{
+/*    width: 100%;*/
+    height: 100%;
 }
 
 

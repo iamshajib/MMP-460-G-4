@@ -76,7 +76,7 @@
                             <h3>About</h3>
                         </div>
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <p>In the Animation and Motion Graphics Major (ANI) students get a solid grounding in art and animation skills and theory. During the course of their studies they learn script writing, how to draw, the principles and techniques of 2D animation, 3D modeling and create 3D animated projects. Students will also get the opportunity to dive into motion graphics, art history and film studies. The result is well-rounded graduates ready to move on to the next phase in their careers.</p>
                             <a href="#" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
@@ -97,15 +97,15 @@
 
 
 
-                <?php
-                                $the_query = new WP_Query( array( 'cat' => 18, 'posts_per_page' => 5) ); ?>
+               <?php
+                                $wp_query = new WP_Query( array( 'category_name' => 'ani', 'posts_per_page' => 8) ); ?>
 
-                    <?php if ( $the_query->have_posts() ) : ?>
+                    <?php if ( $wp_query->have_posts() ) : ?>
 
                         <!-- pagination here -->
 
                         <!-- the loop -->
-                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
                             <div class="col-md-3 text-center">
                                 <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
@@ -125,26 +125,25 @@
                                 <!-- end of the loop -->
 
                                 <!-- pagination here -->
+                                <p>posts pagination</p>
+                                <?php
 
-                                <?php wp_reset_postdata(); ?>
+the_posts_pagination( array( 'mid_size'  => 2 ) );
 
+//                                    the_posts_pagination( array( // 'mid_size' => 2, // 'prev_text' => __( 'Back', 'textdomain' ), // 'next_text' => __( 'Onward', 'textdomain' ), // ) );
+                                ?>
 
-                                    <?php else : ?>
-                                        <p>
-                                            <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-                                        </p>
-                                        <?php endif; ?>
-
-
+                                    <?php wp_reset_postdata(); ?>
 
 
+                                        <?php else : ?>
+                                            <p>
+                                                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                                            </p>
+                                            <?php endif; ?>
 
 
-
-
-
-                                            <!-- end of students list-->
-
+                                                <!-- end of students list-->
 
 
 

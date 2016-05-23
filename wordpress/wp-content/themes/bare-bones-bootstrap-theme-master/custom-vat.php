@@ -8,11 +8,7 @@
 
 
 
-        <div class="container-fluid homeSlider text-center">
-
-
-
-
+        <div class="container-fluid text-center" id="homeSlider">
 
                            <div id="myCarousel" class="carousel slide vert-offset-top-1 vert-offset-bottom-2" data-ride="carousel">
                                 <!-- Indicators -->
@@ -26,9 +22,9 @@
 
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="item active" style="background-color: red;" id="vatS1">
-                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>
-<!--                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">-->
+                                    <div class="item active">
+<!--                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>-->
+                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">
 
 </div>
 
@@ -66,7 +62,7 @@
                             <h3>About</h3>
                         </div>
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <p>The Video Arts and Technology Program provides a dynamic education in video, audio and television production. The program prepares students for positions in the entertainment industry, electronic journalism, audiovisual production companies, broadcast networks, and corporate communications departments. It combines extensive hands-on experience in state of the art television studios, audio studio, and postproduction laboratories with theoretical coursework. Students learn the entire process for creating professional video and audio programs from writing a script and creating a budget, to shooting a scene and editing a final cut.The Video Arts and Technology Program provides a dynamic education in video, audio and television production. The program prepares students for positions in the entertainment industry, electronic journalism, audiovisual production companies, broadcast networks, and corporate communications departments. It combines extensive hands-on experience in state of the art television studios, audio studio, and postproduction laboratories with theoretical coursework. Students learn the entire process for creating professional video and audio programs from writing a script and creating a budget, to shooting a scene and editing a final cut.</p>
                             <a href="#" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
@@ -88,7 +84,7 @@
 
 
                 <?php
-                                $wp_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 4) ); ?>
+                                $wp_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8) ); ?>
 
                     <?php if ( $wp_query->have_posts() ) : ?>
 

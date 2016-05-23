@@ -12,7 +12,7 @@
 
             <div class="row">
 
-                <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1">
+                <div class="col-xs-12 col-sm-12 col-md-12">
 
 
 
@@ -76,7 +76,7 @@
                             <h3>About</h3>
                         </div>
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <p>In the Multimedia Programming and Design (MMD) major, students complete a broad range of visual design and interactive projects. Starting from a base knowledge of digital media, graphic and interaction design principles majors complete a range of print and screen-baed designs and applications from brand identity to games, magazine layout to web design. All aspects of the process are covered from planning through execution, delivery and presentation. The program culminates with a capstone group project where students put their talents together and work in teams toward specific deliverables.</p>
                             <a href="#" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
@@ -98,14 +98,14 @@
 
 
                 <?php
-                                $the_query = new WP_Query( array( 'cat' => 17, 'posts_per_page' => 5) ); ?>
+                                $wp_query = new WP_Query( array( 'category_name' => 'mmd', 'posts_per_page' => 8) ); ?>
 
-                    <?php if ( $the_query->have_posts() ) : ?>
+                    <?php if ( $wp_query->have_posts() ) : ?>
 
                         <!-- pagination here -->
 
                         <!-- the loop -->
-                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
                             <div class="col-md-3 text-center">
                                 <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
@@ -125,25 +125,25 @@
                                 <!-- end of the loop -->
 
                                 <!-- pagination here -->
+                                <p>posts pagination</p>
+                                <?php
 
-                                <?php wp_reset_postdata(); ?>
+the_posts_pagination( array( 'mid_size'  => 2 ) );
 
+//                                    the_posts_pagination( array( // 'mid_size' => 2, // 'prev_text' => __( 'Back', 'textdomain' ), // 'next_text' => __( 'Onward', 'textdomain' ), // ) );
+                                ?>
 
-                                    <?php else : ?>
-                                        <p>
-                                            <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-                                        </p>
-                                        <?php endif; ?>
-
-
+                                    <?php wp_reset_postdata(); ?>
 
 
+                                        <?php else : ?>
+                                            <p>
+                                                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                                            </p>
+                                            <?php endif; ?>
 
 
-
-
-
-                                            <!-- end of students list-->
+                                                <!-- end of students list-->
 
 
 
