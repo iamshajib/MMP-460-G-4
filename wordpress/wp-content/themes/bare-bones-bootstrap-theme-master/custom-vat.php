@@ -85,7 +85,7 @@
 
                 <?php
                                 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 4, 'paged' => $paged ) ); ?>
+                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8, 'paged' => $paged ) ); ?>
 
                     <?php if ( $the_query->have_posts() ) : ?>
 
@@ -142,39 +142,6 @@
 
             </div>
             <!-- end of Team Members -->
-
-            <hr>
-
-            <!-- Pagination -->
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">5</a>
-                        </li>
-                        <li>
-                            <a href="#">&raquo;</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.row -->
-
 
             <hr>
 

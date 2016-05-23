@@ -97,15 +97,16 @@
 
 
 
-               <?php
-                                $wp_query = new WP_Query( array( 'category_name' => 'ani', 'posts_per_page' => 8) ); ?>
+                <?php
+                                $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+                                $the_query = new WP_Query( array( 'category_name' => 'ani', 'posts_per_page' => 8, 'paged' => $paged ) ); ?>
 
-                    <?php if ( $wp_query->have_posts() ) : ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
 
                         <!-- pagination here -->
 
                         <!-- the loop -->
-                        <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                             <div class="col-md-3 text-center">
                                 <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
@@ -125,12 +126,20 @@
                                 <!-- end of the loop -->
 
                                 <!-- pagination here -->
-                                <p>posts pagination</p>
+
                                 <?php
-
-the_posts_pagination( array( 'mid_size'  => 2 ) );
-
-//                                    the_posts_pagination( array( // 'mid_size' => 2, // 'prev_text' => __( 'Back', 'textdomain' ), // 'next_text' => __( 'Onward', 'textdomain' ), // ) );
+                                    $args = [
+                                      'query' => $the_query,
+                                      'output_wrap' => 'ul',
+                                      'output_class' => 'pagination',
+                                      'current_wrap' => 'li',
+                                      'current_class' => 'active',
+                                      'page_wrap' => 'li',
+                                      'page_class' => '',
+                                      'link_class' => '',
+                                      'show_page_count' => false
+                                    ];
+                                    echo get_paginated_numbers( $args )
                                 ?>
 
                                     <?php wp_reset_postdata(); ?>
@@ -145,49 +154,15 @@ the_posts_pagination( array( 'mid_size'  => 2 ) );
 
                                                 <!-- end of students list-->
 
-
-
             </div>
             <!-- end of Team Members -->
 
-            <hr>
-
-            <!-- Pagination -->
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">5</a>
-                        </li>
-                        <li>
-                            <a href="#">&raquo;</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.row -->
 
 
-            <hr>
+        </div>
+        <!-- end of Team Members -->
 
-
-
-
+        <hr>
 
         </div>
         <!--- end of container--->
