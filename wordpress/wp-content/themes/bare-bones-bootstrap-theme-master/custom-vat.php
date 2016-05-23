@@ -84,6 +84,7 @@
 
 
                 <?php
+                                $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
                                 $wp_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8) ); ?>
 
                     <?php if ( $wp_query->have_posts() ) : ?>
