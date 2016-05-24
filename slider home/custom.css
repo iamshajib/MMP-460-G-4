@@ -46,22 +46,29 @@
 
 #home-wrapper img {
    margin: auto;
-    margin-top: 25%;
+    padding-top: 25%;
 }
-
+.tiles{
+/*    padding: 15px;*/
+}
 .tiles h1{
-    margin-top: 15%;
+    margin-top: 10%;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+}
+.tiles h2{
     font-family: 'Oswald', sans-serif;
 }
 
-.tiles{
+
+.tiles h1{
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.tiles:hover{
+.tiles h1:hover{
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
@@ -93,6 +100,20 @@ height: 70%;
     height: 70%;
 }
 
+
+/*
+@media (max-width: @screen-xs) {
+    h1{font-size: 5px;    
+    }
+    h3{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    h1{font-size: 3px;}
+}
+*/
 
 
 
