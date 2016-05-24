@@ -17,25 +17,23 @@
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <!--                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>-->
-                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">
-
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/vat3.jpg">
                     </div>
 
                     <div class="item">
-                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/vat2.jpg"></div>
 
                     <div class="item">
-                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/vat1.jpg"></div>
 
                     <div class="item">
-                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/vat5.jpg"></div>
 
                 </div>
             </div>
@@ -84,7 +82,7 @@
 
                 <?php
                                 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 8, 'paged' => $paged ) ); ?>
+                                $the_query = new WP_Query( array( 'category_name' => 'vat', 'posts_per_page' => 12, 'paged' => $paged ) ); ?>
 
                     <?php if ( $the_query->have_posts() ) : ?>
 
