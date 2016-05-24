@@ -46,7 +46,7 @@
 
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
                     <h1 class="page-header">
                     Welcome to Animation and Motion Graphics
                 </h1>
@@ -73,7 +73,7 @@
             <!-- Team Members -->
             <div class="row">
 
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
                     <h1 class="page-header">Students Works</h1>
                 </div>
 

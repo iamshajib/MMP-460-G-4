@@ -39,6 +39,90 @@ Do not modify the content in those folders.
 }
 /*-------------------end of header------------------*/
 
+/*-------------------Home------------------*/
+
+#home-wrapper{
+/*height: 90vh;*/
+    padding-bottom: 0%;
+}
+
+
+#home-wrapper img {
+   margin: auto;
+    padding-top: 25%;
+}
+.tiles{
+/*    padding: 15px;*/
+}
+.tiles h1{
+    color: black;
+    margin-top: 10%;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+}
+.tiles h2{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.tiles h3{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.tiles a{
+	text-decoration: none;
+}
+
+
+.tiles h1{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tiles h1:hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.slider{
+    margin-top: 5%;
+}
+
+#h-vat {
+    background-color: #ff6700;
+height: 90vh;
+}
+
+#h-mmd {
+    background-color: #029c9a;
+height: 90vh;
+}
+
+#h-ani {
+    background-color: #ee1882;
+    height: 90vh;
+}
+
+
+/*
+@media (max-width: @screen-xs) {
+    h1{font-size: 5px;
+    }
+    h3{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    h1{font-size: 3px;}
+}
+*/
+/*-------------------End of Hoome------------------*/
+
+
 /*-------------------slider------------------*/
 #homeSlider img {
     width: 100%;

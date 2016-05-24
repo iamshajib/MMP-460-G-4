@@ -48,12 +48,12 @@
 
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
                     <h1 class="page-header">
                     Welcome to Video Arts and Technology</h1>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3>About</h3>
@@ -74,7 +74,7 @@
             <!-- Team Members -->
             <div class="row">
 
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
                     <h1 class="page-header">Students Works</h1>
                 </div>
 
@@ -90,7 +90,7 @@
 
                         <!-- the loop -->
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                            <div class="col-md-3 text-center">
+                            <div class="col-xs-12 col-sm-4 col-col-md-3 col-lg-3 text-center">
                                 <div class="thumbnail">
                                     <!-- check if the post has a Post Thumbnail assigned to it. -->
                                     <?php if ( has_post_thumbnail() ) : ?>
