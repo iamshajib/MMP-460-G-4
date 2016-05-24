@@ -18,18 +18,18 @@
                                     <div class="item active">
                                         <h2>VAT</h2></div>
                                     <div class="item">
-                                        <!--                                <h3> Provides a dynamic education in video,<br> audio and television production.</h3>-->
-                                        <h3>Video, audio and television production.</h3>
+                                        <h3> Provides a dynamic education in video, audio and television production.</h3>
+                                        <!--                                        <h3>Video, audio and television production.</h3>-->
                                     </div>
 
                                     <div class="item">
-                                        <!--                                <h3> Prepares students for positions in the <br> entertainment industry, electronic journalism, </h3>-->
-                                        <h3>Electronic journalism, audiovisual production.</h3>
+                                        <h3> Prepares students for positions in the  entertainment industry, electronic journalism, </h3>
+                                        <!--                                        <h3>Electronic journalism, audiovisual production.</h3>-->
                                     </div>
 
                                     <div class="item">
-                                        <!--                                <h3>Audiovisual production companies, broadcast<br> and cable networks, and corporate communications departments.</h3>-->
-                                        <h3> Art television studios, audio studio, postproduction.</h3>
+                                        <h3>Audiovisual production companies, broadcast<br> and cable networks, and corporate communications departments.</h3>
+                                        <!--                                        <h3> Art television studios, audio studio, postproduction.</h3>-->
                                     </div>
                                 </div>
                             </div>
@@ -50,18 +50,18 @@
                                         <h2>MMD</h2></div>
 
                                     <div class="item">
-                                        <!--                                <h3>  prepares students for careers in a variety of "multimedia industries", companies and institutions that develop, produce or market multimedia products, programs or services.</h3>-->
-                                        <h3>Visual design and interactive projects.</h3>
+                                        <h3>  prepares students for careers in a variety of "multimedia industries", companies and institutions that develop, produce or market multimedia products, programs or services.</h3>
+                                        <!--                                        <h3>Visual design and interactive projects.</h3>-->
                                     </div>
 
                                     <div class="item">
-                                        <!--                                <h3> The program instructs students in the design and programming of computer-based interactive products that incorporate text, graphics, sound,animation and video.</h3>-->
-                                        <h3>Games, magazine layout to web design.</h3>
+                                        <h3> The program instructs students in the design and programming of computer-based interactive products that incorporate text, graphics, sound,animation and video.</h3>
+                                        <!--                                        <h3>Games, magazine layout to web design.</h3>-->
                                     </div>
 
                                     <div class="item">
-                                        <!--                                <h3>Develops different types of talent, both creative and technical, with the imperative that each understands the work of the other so that they can collaborate effectively.</h3>-->
-                                        <h3>Execution, delivery and presentation</h3>
+                                        <h3>Develops different types of talent, both creative and technical, with the imperative that each understands the work of the other so that they can collaborate effectively.</h3>
+                                        <!--                                        <h3>Execution, delivery and presentation</h3>-->
                                     </div>
                                 </div>
                             </div>
@@ -87,18 +87,18 @@
                                         <h2>ANI</h2></div>
 
                                     <div class="item">
-                                        <!--                                <h3> provides students with the fundamentals of two- and three-dimensional<br> (2D and 3D) animation, motion graphics, and special effects.</h3>-->
-                                        <h3>Develop skills in Art and animation , theory.</h3>
+                                        <h3> provides students with the fundamentals of two- and three-dimensional (2D and 3D) animation, motion graphics, and special effects.</h3>
+                                        <!--                                        <h3>Develop skills in Art and animation , theory.</h3>-->
                                     </div>
 
                                     <div class="item">
-                                        <!--                                <h3> Once necessarily hand-made, expensive and rare, animation has undergone a technical transformation and is now a ubiquitous part of special effect, </h3>-->
-                                        <h3>2D animation, 3D modeling and 3D animation</h3>
+                                        <h3> Once necessarily hand-made, expensive and rare, animation has undergone a technical transformation and is now a ubiquitous part of special effect, </h3>
+                                        <!--                                        <h3>2D animation, 3D modeling and 3D animation</h3>-->
                                     </div>
 
                                     <div class="item">
-                                        <!--                                 <h3>advertising campaigns, video games, movies, and television.</h3>-->
-                                        <h3>Motion graphics, art history and film studies. </h3>
+                                        <h3>advertising campaigns, video games, movies, and television.</h3>
+                                        <!--                                        <h3>Motion graphics, art history and film studies. </h3>-->
                                     </div>
 
                                 </div>
