@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+
+<!--google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,10 +45,11 @@
 
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <img src="<?php header_image(); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-
                 </a>
+
                  <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <?php bloginfo('name'); ?>
+                    <!--  php bloginfo('name'); -->
+                     <h1>Media Arts and Technology</h1>
                 </a>
 
 

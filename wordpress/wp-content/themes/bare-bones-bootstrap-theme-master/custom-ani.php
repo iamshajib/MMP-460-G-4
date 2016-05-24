@@ -6,55 +6,39 @@
 
 
 
+        <div class="container-fluid text-center" id="homeSlider">
 
+            <div id="myCarousel" class="carousel slide vert-offset-top-1 vert-offset-bottom-2" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
 
-        <div class="container-fluid allslider">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <!--                                        <h2>dsvhdsbvhiuds fdshiufbdsbfds</h2>-->
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg">
 
-            <div class="row">
-
-                <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1">
-
-
-
-                    <div class="bg-ivory hide-title" id="tribeca-loft">
-
-                        <div class="slider">
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                                </ol>
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg"></div>
-
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
-
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
-
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
 
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
 
                 </div>
-
-
             </div>
-            <!-- end of row -->
+
+
         </div>
         <!-- end of container -->
 
@@ -77,7 +61,7 @@
                         </div>
                         <div class="panel-body">
                             <p>In the Animation and Motion Graphics Major (ANI) students get a solid grounding in art and animation skills and theory. During the course of their studies they learn script writing, how to draw, the principles and techniques of 2D animation, 3D modeling and create 3D animated projects. Students will also get the opportunity to dive into motion graphics, art history and film studies. The result is well-rounded graduates ready to move on to the next phase in their careers.</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                            <a href="http://www.bmcc.cuny.edu/media-arts/ani_program.jsp" target="_blank" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +76,7 @@
             <div class="row">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">Students</h1>
+                    <h1 class="page-header">Students Works</h1>
                 </div>
 
 

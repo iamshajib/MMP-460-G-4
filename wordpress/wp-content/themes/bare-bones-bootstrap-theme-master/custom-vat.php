@@ -52,8 +52,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                    Welcome to Video Arts & Technology
-                </h1>
+                    Welcome to Video Arts and Technology</h1>
                 </div>
 
                 <div class="col-md-12">
@@ -63,7 +62,7 @@
                         </div>
                         <div class="panel-body">
                             <p>The Video Arts and Technology Program provides a dynamic education in video, audio and television production. The program prepares students for positions in the entertainment industry, electronic journalism, audiovisual production companies, broadcast networks, and corporate communications departments. It combines extensive hands-on experience in state of the art television studios, audio studio, and postproduction laboratories with theoretical coursework. Students learn the entire process for creating professional video and audio programs from writing a script and creating a budget, to shooting a scene and editing a final cut.The Video Arts and Technology Program provides a dynamic education in video, audio and television production. The program prepares students for positions in the entertainment industry, electronic journalism, audiovisual production companies, broadcast networks, and corporate communications departments. It combines extensive hands-on experience in state of the art television studios, audio studio, and postproduction laboratories with theoretical coursework. Students learn the entire process for creating professional video and audio programs from writing a script and creating a budget, to shooting a scene and editing a final cut.</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                            <a href="http://www.bmcc.cuny.edu/media-arts/vat_program.jsp" target="_blank" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +77,7 @@
             <div class="row">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">Students</h1>
+                    <h1 class="page-header">Students Works</h1>
                 </div>
 
 

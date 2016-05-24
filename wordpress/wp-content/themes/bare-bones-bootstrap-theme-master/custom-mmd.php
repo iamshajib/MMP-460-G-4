@@ -8,53 +8,45 @@
 
 
 
-        <div class="container-fluid allslider">
+        <div class="container-fluid text-center" id="homeSlider">
 
-            <div class="row">
+            <div id="myCarousel" class="carousel slide vert-offset-top-1 vert-offset-bottom-2" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
 
-                <div class="col-xs-12 col-sm-12 col-md-12">
-
-
-
-                    <div class="bg-ivory hide-title" id="tribeca-loft">
-
-                        <div class="slider">
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                                </ol>
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-1.jpg"></div>
-
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
-
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-2.jpg"></div>
-
-                                    <div class="item">
-                                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/nyc-3.jpg"></div>
-
-                                </div>
-                            </div>
-                        </div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+  <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/mmd9.jpg">
                     </div>
 
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/mmd3.jpg"></div>
 
+                    <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/mmd6.png">
+                       </div>
+
+                    <div class="item">
+                         <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/mmd1.jpg">
+                       </div>
+                     <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/mmd11.jpg"></div>
+
+                     <div class="item">
+                        <img class="img-responsive" src="http://group.bmcc.is/g4_sp16/wp-content/uploads/2016/05/mmd2.jpg"></div>
 
                 </div>
-
-
             </div>
-            <!-- end of row -->
+
+
         </div>
         <!-- end of container -->
 
@@ -77,7 +69,7 @@
                         </div>
                         <div class="panel-body">
                             <p>In the Multimedia Programming and Design (MMD) major, students complete a broad range of visual design and interactive projects. Starting from a base knowledge of digital media, graphic and interaction design principles majors complete a range of print and screen-baed designs and applications from brand identity to games, magazine layout to web design. All aspects of the process are covered from planning through execution, delivery and presentation. The program culminates with a capstone group project where students put their talents together and work in teams toward specific deliverables.</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                            <a href="http://www.bmcc.cuny.edu/media-arts/mmp_program.jsp" target="_blank" class="btn btn-default">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -92,14 +84,14 @@
             <div class="row">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">Students</h1>
+                    <h1 class="page-header">Students Works</h1>
                 </div>
 
 
 
                 <?php
                                 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                                $the_query = new WP_Query( array( 'category_name' => 'mmd', 'posts_per_page' => 8, 'paged' => $paged ) ); ?>
+                                $the_query = new WP_Query( array( 'category_name' => 'mmd', 'posts_per_page' => 12, 'paged' => $paged ) ); ?>
 
                     <?php if ( $the_query->have_posts() ) : ?>
 
