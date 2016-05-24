@@ -109,8 +109,8 @@
                                 <!-- end of the loop -->
 
                                 <!-- pagination here -->
-
-                                <?php
+                                <div class="row">
+                                    <?php
                                     $args = [
                                       'query' => $the_query,
                                       'output_wrap' => 'ul',
@@ -124,18 +124,19 @@
                                     ];
                                     echo get_paginated_numbers( $args )
                                 ?>
+                                </div>
 
-                                    <?php wp_reset_postdata(); ?>
-
-
-                                        <?php else : ?>
-                                            <p>
-                                                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-                                            </p>
-                                            <?php endif; ?>
+                                <?php wp_reset_postdata(); ?>
 
 
-                                                <!-- end of students list-->
+                                    <?php else : ?>
+                                        <p>
+                                            <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                                        </p>
+                                        <?php endif; ?>
+
+
+                                            <!-- end of students list-->
 
             </div>
             <!-- end of Team Members -->

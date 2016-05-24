@@ -49,17 +49,18 @@ Do not modify the content in those folders.
 /*-------------------Home------------------*/
 
 #home-wrapper {
+    /*    display: flex;*/
     /*height: 90vh;*/
     padding-bottom: 0%;
 }
 
 #home-wrapper img {
     margin: auto;
-    padding-top: 40%;
+    padding-top: 35%;
 }
 
 .tiles {
-    /*    padding: 15px;*/
+    /*    flex: 1 1 70%;*/
 }
 
 .tiles h1 {
@@ -103,16 +104,19 @@ Do not modify the content in those folders.
 }
 
 #h-vat {
+    /*    flex: 1 1 70%;*/
     background-color: #ff6700;
     height: 70vh;
 }
 
 #h-mmd {
+    /*    flex: 1 1 70%;*/
     background-color: #029c9a;
     height: 70vh;
 }
 
 #h-ani {
+    /*    flex: 1 1 70%;*/
     background-color: #ee1882;
     height: 70vh;
 }
