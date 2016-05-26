@@ -106,19 +106,20 @@ Do not modify the content in those folders.
 #h-vat {
     /*    flex: 1 1 70%;*/
     background-color: #ff6700;
-    height: 70vh;
+    height: 90vh;
 }
 
 #h-mmd {
     /*    flex: 1 1 70%;*/
     background-color: #029c9a;
-    height: 70vh;
+    height: 90vh;
 }
 
 #h-ani {
     /*    flex: 1 1 70%;*/
     background-color: #ee1882;
-    height: 70vh;
+    height: 90vh;
+/*    padding-bottom: 10%;*/
 }
 
 
